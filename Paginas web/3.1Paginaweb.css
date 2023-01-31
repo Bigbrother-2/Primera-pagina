@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.MI{
+    padding-left: 25px;
+    padding-right: 17px;
+}
+    .header{
+        background: url(Imagenes/iconos.jpg.jpg);
+        background-attachment: contain;
+        background-position: center;
+        background-size: cover;
+    }
+        .menu{
+            background: rgba(0,0,0, .1);
+            display: flex;
+            flex-flow: row nowrap;
+            /* Sabes para que sirve el flex-flow?. Es un atajo para las etiquetas Flex-wrap y flex-direction. Es una etiqueta que engloba a las 2 anteriores nombradas. Si */
+            align-items: center;
+            height: 60px;
+            border-bottom: rgba(255,255,255,.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+               
+            }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                /* Se abre una nueva clase. El .color a. Que se refiere al ancla. Si lo colocamos en el .logo, no va a pasar nada porque flashea que le decimos al texto, no al ancla. POr eso se especifica.    */
+                .logo a:hover{
+                    color:#f55f09
+                }
+            .navegacion{
+                flex: 5 1 auto;
+                
+            }
+                .navegacion a{
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px; 
+                }
+                .navegacion a:hover{
+                    color: #f55f09;
+                }
+            .redes{
+                flex: 1 1 auto;
+                display: flex;
+                /* DISPLAY:FLEX SIRVE PARA PONER UNO AL LADO DEL OTRO */
+            }
+                .redes a{
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 0 5px;
+                }
+                .redes a:hover{
+                    color: #f55f09;
+                }
+        .texto-principal{
+            /* background:#ececec; */
+            height: 580px;
+            display: flex;
+            align-items: center;
+            /* display: flex;
+            align-items: center; Se usa para centar el texto justo en el centro de todo. El display te permite dar la caracteristica de poder mover los items
+            El aling-items es a donde lo vamos a centar.  */
+        }
+            h1{
+                font-family:"lora", serif;
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300px;
+                text-align: center;
+                line-height: 1.6;
+            }
+    .section{
+        /* background: #000; */
+        display: flex;
+    }
+        .articulos{
+            background: #f7f7f7;
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+        }
+            .articule{
+                background: #ececec;
+                flex: 1 1 40%;
+                margin: 10px 10px 0px 0px;
+                font-size: 13px;
+                margin: 10px 10px 0 0;
+                letter-spacing: 1px;
+                
+            }
+            h3{
+                color:#000;
+                font-size: 13px;
+                padding: 10px 0 5px 25px;
+                margin-top: -65px;
+            }
+            h2{
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 0px 0px 15px 25px;
+               
+            }
+            p{
+                padding-left: 220px;
+                margin-top: -250px;
+                
+            }
+            .articule a{
+                margin-left: 220px;
+                margin-top: 20px;
+                color:#fff;
+                background: rgb(32, 30, 30);
+                padding: 10px 15px;
+                font-size: 10px;
+                display: inline-block;
+            }
+            .articule a:hover{
+                background:#24a5d8bb;
+            }
+            .articule img{
+                width: 40%;
+                padding: 25px 0 0 25px;
+                /* margin-bottom: 50px; */
+            }
+            .navegador2{
+                background: #000;
+                flex: 1 1 100%;
+                margin: 10px 10px 0 0;
+                /* padding-top: 15px; */
+                height: 20px;
+                
+            }
+            .navegador2 a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            /* background: #EB455F; */
+            flex: 1 1 auto;
+            margin-top: 10px;
+        }
+        h4{
+            margin-top: -6px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            
+        }
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            /* background: #FFE69A; */
+            width: 300px;
+        }
+        .pie a{
+            color: #fff;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}

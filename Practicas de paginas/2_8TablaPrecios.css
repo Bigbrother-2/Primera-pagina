@@ -1,0 +1,61 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-weight: 400;
+}
+p{ 
+    font-weight: 300;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{ 
+    text-align: center;
+}
+.columna{
+    background: rgb( 238, 238, 238);
+    color: #333;
+    border: 1px solid #333;
+    /* Esto es el borde de la caja */
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    /* Esto es el estilo del borde de la caja. */
+    box-shadow: 10px 10px 25px #888;
+    /* Esto se mueve con el eje carteciano. Es decir, el primer numero es para el eje x y el segundo nuemro para el eje y. Y el tercer nuemero corresponde al degradado. */
+    width: 23%;
+    /* El width es el espacio que va a ocupar determinada etiqueta. */
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: #00dac7;
+}
+.btn-precio{
+    background: salmon;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+.btn-precio:hover{
+    background: rgb(247, 100, 84);
+}
+@media (max-width: 800px){
+    .columna{
+        width: 45%;
+    }
+}
+@media (max-width: 550px){
+    .columna{
+        width: 100%;
+    }
+}

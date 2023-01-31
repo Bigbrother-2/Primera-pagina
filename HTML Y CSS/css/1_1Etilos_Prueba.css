@@ -1,0 +1,19 @@
+/* parrafo 1 */
+p{
+    color: aqua;
+    font-size: 50px;
+}
+/* parrafo 2 */
+#Unico{
+    color: blue;
+    font-size: 25px;
+}
+/* parrafo 3 */
+.rojo{
+    color: red;
+    font-size: 10px;
+}
+/* parrafo 4 */
+.fondo{
+    background: #444;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Esto es lo que se debe agregar cuando hagamos los estulilos en css.  -->
+    <link rel="stylesheet" href="1_1Etilos_Prueba.css"> 
+</head>
+<body>
+    <!-- Cual es el problema de esto. Ya que en todas las que tenga una etiqueta de p se le van a colocar los estilos elegidos. Para arreglar este problema hay distintas maneras de solucionarlo.  -->
+                                             <!-- parrafo 1 -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, officia earum necessitatibus aliquam numquam esse, ipsum nulla, at rem possimus incidunt nobis provident alias. Nemo obcaecati magni consequatur provident recusandae.
+    </p>
+
+
+    <!-- La primera forma de solucionarlo es agregandole un identificador dentro de la etiqueta. Luesgo se coloca el nombre del identificador en el archivo de css y se agrega las modificaciones correspondientes. Lo malo de esto es que si quiero aplicar las mismas modificaciones a otra etiqueta no se puede. -->
+                                            <!-- Parrafo 2  -->
+    <p id="Unico">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet molestiae voluptatibus delectus. Debitis obcaecati iusto eveniet, veniam consequatur perferendis fuga! Dignissimos adipisci numquam pariatur voluptatum reprehenderit! Similique, consequatur atque.
+    </p>
+
+
+    <!-- La segunda forma de solucinar es colocarlo a traves de clases. Se coloca class  -->
+                                            <!-- Parrafo 3 -->
+    <p class="rojo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio accusantium similique quae cum quidem qui ducimus reiciendis ea eveniet quod enim odio quo nostrum optio, unde quibusdam dolor architecto aliquam.
+    </p>
+
+
+    <!-- La tercera opcion de hacerlo es realizarlo en estilos en cascada. Basicamente sobreescribis los estilos. Lo bueno que tiene es que si queres modicarlo mas podes agregarle solamente espaciando y nombrando. Cuando estes el archivo css lo escribis y realizamos las modificaciones correspondientes. -->
+                                            <!-- parrafo 4 -->
+    <p class="rojo fondo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quia ea adipisci porro provident suscipit laudantium optio eum magnam saepe culpa et error, debitis illum aperiam, numquam fugiat molestiae iste!
+    </p>
+</body>
+</html>

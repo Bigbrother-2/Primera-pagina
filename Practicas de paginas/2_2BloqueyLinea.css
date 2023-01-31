@@ -1,0 +1,12 @@
+h1{
+    color: aqua;
+    background: #7B2869;
+    display: inline-block;
+    /* display: inline-block Esto hace que el elemento de bloque sea un elemento de linea */
+}
+a{
+    color: aqua;
+    background: #579BB1;
+    display: block;
+    /* display: block; Este cambia de un elemento de linea a un elemento de bloque o columna */
+}

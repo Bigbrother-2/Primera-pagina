@@ -1,0 +1,10 @@
+button{
+    background: #F5D5AE;
+    color: #1B2430;
+}
+button:hover{
+    background: #ECB390;
+}
+button:active{
+    background: #B7E5DD;
+}

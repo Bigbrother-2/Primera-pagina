@@ -1,0 +1,12 @@
+/* referencia 1 */
+.rojo{
+    color: red;
+}
+/* referencia 2 */
+.azul{
+    color: rgb(0, 0, 255)
+}
+/* referencia 3 */
+.verde{
+    color: #00ff0d
+}
